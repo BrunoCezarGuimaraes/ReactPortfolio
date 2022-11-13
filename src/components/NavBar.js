@@ -4,9 +4,8 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 /*Imagens*/
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-
+import navIcon4 from '../assets/img/nav-icon4.svg';
+import navIcon5 from '../assets/img/nav-icon5.svg';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -45,15 +44,17 @@ export const NavBar = () => {
                         <Nav className="me-auto">
                             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
                             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projetos</Nav.Link>
+                            <Nav.Link href="#experience" className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experience')}>Experiências</Nav.Link>
                         </Nav>
                         <span className='navbar-text'>
                             <div className='social-icon'>
-                                <a href="#"><img src={navIcon1} alt="" /></a>
-                                <a href="#"><img src={navIcon2} alt="" /></a>
-                                <a href="#"><img src={navIcon3} alt="" /></a>
+                                <a href="https://www.linkedin.com/in/bruno-cezar-guimar%C3%A3es-099058163/"><img src={navIcon1} alt="Linkedin" /></a>
+                                <a href="https://github.com/BrunoCezarGuimaraes"><img src={navIcon5} alt="Github" /></a>
+                                <a href="https://www.behance.net/brunocezarguimaraes"><img src={navIcon4} alt="Behance" /></a>
+                            
                             </div>
-                            <button className='vvd' onClick={() => console.log('connect')}><span>Vamos conectar</span></button>
+                        <button className='vvd' onClick={() => console.log('connect')}><span>Vamos conectar</span></button>
                         </span>
                     </Navbar.Collapse>
                 </Container>

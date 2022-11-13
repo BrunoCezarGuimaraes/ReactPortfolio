@@ -1,8 +1,24 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+
+/** Programação Img */
+import projImg1 from "../assets/img/portfolio1.jpg";
+import projImg2 from "../assets/img/portfolio2.jpg";
+import projImg3 from "../assets/img/portfolio3.jpg";
+import projImg4 from "../assets/img/portfolio4.jpg";
+import projImg6 from "../assets/img/portfolio6.jpg";
+import projImg8 from "../assets/img/portfolio8.jpg";
+
+/* Design Web Img */
+import projImg9 from '../assets/img/portfolioDW1.jpg'
+import projImg10 from '../assets/img/portfolioDW2.jpg'
+
+/* Design Mobile Img */
+import projImg11 from '../assets/img/portfolioDM1.jpg'
+import projImg12 from '../assets/img/portfolioDM2.jpg'
+import projImg13 from '../assets/img/portfolioDM3.jpg'
+import projImg14 from '../assets/img/portfolioDM4.jpg'
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,83 +27,144 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Atlas Academy",
+      description: "Programação",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Dashboard Pessoal",
+      description: "Programação",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "DevCrow - Studios",
+      description: "Programação",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Letmeask - projeto NLW",
+      description: "Programação",
+      imgUrl: projImg4,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Islands Clone Extension",
+      description: "Programação",
+      imgUrl: projImg8,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Fitness Academy",
+      description: "Programação",
+      imgUrl: projImg6,
+    },
+  ];
+
+  const projectsDesignWeb = [
+    {
+      title: "Atlas Academy",
+      description: "Programação",
+      imgUrl: projImg9,
+    },
+    {
+      title: "Atlas Academy",
+      description: "Programação",
+      imgUrl: projImg10,
+    },
+  ];
+
+  const projectsDesignMobile = [
+    {
+      title: "Atlas Academy",
+      description: "Programação",
+      imgUrl: projImg11,
+    },
+    {
+      title: "Atlas Academy",
+      description: "Programação",
+      imgUrl: projImg12,
+    },
+    {
+      title: "Atlas Academy",
+      description: "Programação",
+      imgUrl: projImg13,
+    },
+    {
+      title: "Atlas Academy",
+      description: "Programação",
+      imgUrl: projImg14,
     },
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>Projetos</h2>
+                  <p>Exemplos de projetos práticos de programação e design, para ver mais projetos ou detalhes acessem o github ou o behance.</p>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">Programação</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">Design Web</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">Design Mobile</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+
+                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      <Tab.Pane eventKey="first">
+                        <Row>
+                          {
+                            projects.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
                                 />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+                              )
+                            })
+                          }
+                        </Row>
+                      </Tab.Pane>
+
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {
+                            projectsDesignWeb.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                />
+                              )
+                            })
+                          }
+                        </Row>
+                      </Tab.Pane>
+
+                      <Tab.Pane eventKey="third">
+                        <Row>
+                          {
+                            projectsDesignMobile.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                />
+                              )
+                            })
+                          }
+                        </Row>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>}
             </TrackVisibility>
           </Col>
         </Row>
