@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
 /*Imagens*/
@@ -49,12 +49,12 @@ export const NavBar = () => {
                         </Nav>
                         <span className='navbar-text'>
                             <div className='social-icon'>
-                                <a href="https://www.linkedin.com/in/bruno-cezar-guimar%C3%A3es-099058163/"><img src={navIcon1} alt="Linkedin" /></a>
-                                <a href="https://github.com/BrunoCezarGuimaraes"><img src={navIcon5} alt="Github" /></a>
-                                <a href="https://www.behance.net/brunocezarguimaraes"><img src={navIcon4} alt="Behance" /></a>
-                            
+                                <a href="https://www.linkedin.com/in/bruno-cezar-guimar%C3%A3es-099058163/" target="_blank"><img src={navIcon1} alt="Linkedin" /></a>
+                                <a href="https://github.com/BrunoCezarGuimaraes" target="_blank"><img src={navIcon5} alt="Github" /></a>
+                                <a href="https://www.behance.net/brunocezarguimaraes" target="_blank"><img src={navIcon4} alt="Behance" /></a>
+
                             </div>
-                        <button className='vvd' onClick={() => console.log('connect')}><span>Vamos conectar</span></button>
+
                         </span>
                     </Navbar.Collapse>
                 </Container>

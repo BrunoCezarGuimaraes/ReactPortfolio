@@ -60,36 +60,36 @@ export const Projects = () => {
 
   const projectsDesignWeb = [
     {
-      title: "Atlas Academy",
-      description: "Programação",
+      title: "Sorveteria do Rio",
+      description: "Design Web",
       imgUrl: projImg9,
     },
     {
-      title: "Atlas Academy",
-      description: "Programação",
+      title: "Sweet Home - eCommerce of Furniture",
+      description: "Design Web",
       imgUrl: projImg10,
     },
   ];
 
   const projectsDesignMobile = [
     {
-      title: "Atlas Academy",
-      description: "Programação",
+      title: "My App Games Library",
+      description: "Design Mobile",
       imgUrl: projImg11,
     },
     {
-      title: "Atlas Academy",
-      description: "Programação",
+      title: "Movie Store",
+      description: "Design Mobile",
       imgUrl: projImg12,
     },
     {
-      title: "Atlas Academy",
-      description: "Programação",
+      title: "Crypto App",
+      description: "Design Mobile",
       imgUrl: projImg13,
     },
     {
-      title: "Atlas Academy",
-      description: "Programação",
+      title: "SmartFit Rework",
+      description: "Design Mobile",
       imgUrl: projImg14,
     },
   ];
