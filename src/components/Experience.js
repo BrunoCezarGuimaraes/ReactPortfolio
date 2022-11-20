@@ -68,7 +68,7 @@ export const Experience = () => {
                                                     Senai Maracanã - Técnico em programação de jogos digitais -  oct 2014 - abr 2017.
                                                     <br />
                                                     <br />
-                                                    Escola Virtual Bradesco - Diversos cursos de programação (lista completa no linkedin) - 2019.
+                                                    Escola Virtual Bradesco - Diversos cursos de programação (lista completa no linkedin), tais como java avançado e UML - 2019.
                                                     <br />
                                                     <br />
                                                     CursoemVideo.com - Python / MySQL - 2018

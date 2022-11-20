@@ -5,6 +5,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import emailjs from '@emailjs/browser';
 
+
 export const Contact = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -26,7 +27,7 @@ export const Contact = () => {
       message: message
     }
 
-    emailjs.send("service_5khlm88", "template_n38i22i", templateParams, "p73ntFAizDtAMB1Bd")
+    emailjs.send(`${process.env.REACT_APP_SECRET_SERVICE}`, `${process.env.REACT_APP_SECRET_TEMPLATE}`, templateParams, `${process.env.REACT_APP_SECRET_EMAILJS}`)
     .then((response) => {
       console.log("EMAIL ENVIADO", response.status, response.text)
       alert("Email enviado com sucesso")

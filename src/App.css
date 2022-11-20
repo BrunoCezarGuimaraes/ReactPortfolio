@@ -517,6 +517,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Experiencie CSS */
+
 .buttonExp {
   background: linear-gradient(90.21deg, var(--primary-color) -5.91%, var(--secundary-color) 111.58%);
   padding: 20px 65px;
